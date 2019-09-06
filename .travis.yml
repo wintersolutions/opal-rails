@@ -14,14 +14,16 @@ matrix:
   fast_finish: true
 
   include:
-    - gemfile: gemfiles/rails_5_1_opal_master.gemfile
-      rvm: 2.5.5
     - gemfile: gemfiles/rails_5_2_opal_master.gemfile
+      rvm: 2.6.3
+    - gemfile: gemfiles/rails_6_0_opal_master.gemfile
       rvm: 2.6.3
 
     - gemfile: gemfiles/rails_5_1_opal_1_0.gemfile
       rvm: 2.5.5
     - gemfile: gemfiles/rails_5_2_opal_1_0.gemfile
+      rvm: 2.6.3
+    - gemfile: gemfiles/rails_6_0_opal_1_0.gemfile
       rvm: 2.6.3
 
   allow_failures:

@@ -36,4 +36,9 @@ github = -> repo_name { "https://github.com/#{repo_name}.git" }
     gem "rails", "~> 6.0.0"
     gem_opal[self]
   end if current_ruby >= ruby_2_5_0
+
+   appraise "rails_6_1_#{opal_version}" do
+      gem "rails", "~> 6.1.0"
+      gem_opal[self]
+    end if current_ruby >= ruby_2_5_0
 end
